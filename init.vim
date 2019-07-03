@@ -11,3 +11,12 @@ if dein#load_state("~/.cache/dein")
 endif
 if has("vim_starting") && dein#check_install() | call dein#install() | endif
 """ end dein """
+
+se virtualedit=all
+se noswapfile
+se termguicolors
+se nowrap
+se number relativenumber
+se cursorline cursorcolumn
+se ignorecase smartcase
+se wildoptions=pum pumblend=50 winblend=50
