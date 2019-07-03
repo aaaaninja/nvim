@@ -1,6 +1,17 @@
 [[plugins]]
+repo = "cespare/vim-toml"
+on_ft = "toml"
+
+[[plugins]] # markdownを集中して書く系のやつ
 repo = "junegunn/goyo.vim"
 
-[[plugins]]
+[[plugins]] # markdownを集中して書く系のやつ
 repo = "junegunn/limelight.vim"
 depends = [ "goyo.vim" ]
+
+[[plugins]]
+repo = "Shougo/deoplete.nvim"
+
+[[plugins]]
+repo = "Shougo/denite.nvim"
+depends = [ "deoplete.nvim" ]
