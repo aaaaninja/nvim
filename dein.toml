@@ -2,7 +2,17 @@
 repo = "Shougo/dein.vim"
 
 [[plugins]]
+repo = "neoclide/coc.nvim"
+merge = 0
+rev = "release"
+
+[[plugins]]
 repo = "w0rp/ale"
+hook_add = """
+let g:ale_fixers = {
+\   'ruby': ['rubocop'],
+\}
+"""
 
 [[plugins]]
 repo = "itchyny/lightline.vim"
