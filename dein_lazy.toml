@@ -1,0 +1,6 @@
+[[plugins]]
+repo = "junegunn/goyo.vim"
+
+[[plugins]]
+repo = "junegunn/limelight.vim"
+depends = [ "goyo.vim" ]
