@@ -1,0 +1,23 @@
+[[plugins]]
+repo = "Shougo/dein.vim"
+
+[[plugins]]
+repo = "w0rp/ale"
+
+[[plugins]]
+repo = "itchyny/lightline.vim"
+[[plugins]]
+repo = 'maximbaz/lightline-ale'
+depends = [ "lightline.vim", "ale" ]
+
+[[plugins]]
+repo = "tpope/vim-fugitive"
+[[plugins]]
+repo = "airblade/vim-gitgutter"
+depends = [ "vim-fugitive" ]
+
+[[plugins]]
+repo = "easymotion/vim-easymotion"
+
+[[plugins]]
+repo = 'Shougo/defx.nvim'
