@@ -30,4 +30,11 @@ depends = [ "vim-fugitive" ]
 repo = "easymotion/vim-easymotion"
 
 [[plugins]]
-repo = 'Shougo/defx.nvim'
+repo = "Shougo/defx.nvim"
+
+[[plugins]]
+repo = "Yggdroot/indentLine"
+hook_add = """
+let g:indentLine_color_gui = '#A4E57E'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+"""

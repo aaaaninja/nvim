@@ -20,3 +20,4 @@ se number relativenumber
 se cursorline cursorcolumn
 se ignorecase smartcase
 se wildoptions=pum pumblend=50 winblend=50
+se expandtab ts=2 sw=2

@@ -1,6 +1,6 @@
 [[plugins]]
 repo = "cespare/vim-toml"
-on_ft = "toml"
+on_ft = ["toml"]
 
 [[plugins]] # markdownを集中して書く系のやつ
 repo = "junegunn/goyo.vim"
@@ -10,8 +10,41 @@ repo = "junegunn/limelight.vim"
 depends = [ "goyo.vim" ]
 
 [[plugins]]
-repo = "Shougo/deoplete.nvim"
+repo = "dhruvasagar/vim-table-mode"
+hook_add = """
+let g:table_mode_corner = '|'
+"""
 
+[[plugins]]
+repo = "Shougo/deoplete.nvim"
 [[plugins]]
 repo = "Shougo/denite.nvim"
 depends = [ "deoplete.nvim" ]
+
+[[plugins]]
+repo = "prettier/vim-prettier"
+on_ft = ["javascript", "typescript"]
+
+[[plugins]]
+repo = "alvan/vim-closetag"
+on_ft = ["html", "vue", "javascript", "typescript"]
+hook_add = """
+let g:closetag_filenames = '*.html,*.vue'
+"""
+
+[[plugins]]
+repo = "HerringtonDarkholme/yats.vim"
+on_ft = ["typescript"]
+
+#[[plugins]]
+#repo = "mhartington/nvim-typescript"
+#build = "install.sh"
+#on_ft = ["typescript"]
+
+[[plugins]]
+repo = "elzr/vim-json"
+depends = [ "Yggdroot/indentLine" ]
+on_ft = ["json"]
+hook_add = """
+let g:vim_json_syntax_conceal = 0
+"""
