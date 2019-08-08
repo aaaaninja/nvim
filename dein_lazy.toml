@@ -27,9 +27,9 @@ on_ft = ["javascript", "typescript"]
 
 [[plugins]]
 repo = "alvan/vim-closetag"
-on_ft = ["html", "vue", "javascript", "typescript"]
+on_ft = ["html", "vue", "javascript", "typescript", "erb"]
 hook_add = """
-let g:closetag_filenames = '*.html,*.vue'
+let g:closetag_filenames = '*.html,*.vue,*.erb'
 """
 
 [[plugins]]
@@ -48,3 +48,7 @@ on_ft = ["json"]
 hook_add = """
 let g:vim_json_syntax_conceal = 0
 """
+
+[[plugins]]
+repo = "posva/vim-vue"
+on_ft = [ "vue" ]
