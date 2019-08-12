@@ -56,3 +56,6 @@ on_ft = [ "vue" ]
 [[plugins]]
 repo = "mechatroner/rainbow_csv"
 on_ft = [ "csv", "tsv" ]
+
+[[plugins]]
+repo = "tpope/vim-dadbod"
