@@ -28,6 +28,9 @@ repo = "tpope/vim-fugitive"
 [[plugins]]
 repo = "airblade/vim-gitgutter"
 depends = [ "vim-fugitive" ]
+[[plugins]]
+repo = "rhysd/committia.vim"
+depends = [ "vim-fugitive" ]
 
 [[plugins]]
 repo = "easymotion/vim-easymotion"
