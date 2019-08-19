@@ -59,3 +59,11 @@ on_ft = [ "csv", "tsv" ]
 
 [[plugins]]
 repo = "tpope/vim-dadbod"
+
+[[plugins]]
+repo = "zah/nim.vim"
+on_ft = [ "nim" ]
+
+[[plugins]]
+repo = "alaviss/nim.nvim"
+on_ft = [ "nim" ]
