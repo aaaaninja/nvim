@@ -1,0 +1,18 @@
+snippet magic
+# frozen_string_literal: true
+endsnippet
+
+snippet gems
+gem 'activesupport', require: 'active_support/all'
+gem 'pry'
+
+group :development do
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+end
+
+group :test do
+  gem 'cucumber'
+  gem 'rspec'
+end
+endsnippet

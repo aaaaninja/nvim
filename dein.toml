@@ -44,3 +44,20 @@ hook_add = """
 let g:indentLine_color_gui = '#A4E57E'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 """
+
+[[plugins]]
+repo = "honza/vim-snippets"
+
+[[plugins]]
+repo = "SirVer/ultisnips"
+depends = [ "honza/vim-snippets" ]
+hook_add = """
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
+let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+let g:UltiSnipsEditSplit="vertical"
+"""
+# If you want :UltiSnipsEdit to split your window.
