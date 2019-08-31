@@ -12,12 +12,12 @@ endif
 if has("vim_starting") && dein#check_install() | call dein#install() | endif
 """ end dein """
 
-se virtualedit=all
-se noswapfile
-se termguicolors
-se nowrap
-se number relativenumber
-se cursorline cursorcolumn
-se ignorecase smartcase
-se wildoptions=pum pumblend=50 winblend=50
-se expandtab ts=2 sw=2
+set virtualedit=all
+set noswapfile
+set termguicolors
+set nowrap
+set number relativenumber
+set cursorline cursorcolumn
+set ignorecase smartcase
+set wildoptions=pum pumblend=50 winblend=50
+set expandtab ts=2 sw=2
