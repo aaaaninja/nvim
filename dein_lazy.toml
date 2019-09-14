@@ -2,12 +2,26 @@
 repo = "cespare/vim-toml"
 on_ft = ["toml"]
 
+[[plugins]]
+repo = "godlygeek/tabular"
+on_ft = [ "markdown" ]
+
+[[plugins]]
+repo = "plasticboy/vim-markdown"
+depends = [ "tabular" ]
+on_ft = [ "markdown" ]
+hook_add = """
+let g:vim_markdown_folding_disabled = 1
+"""
+
 [[plugins]] # markdownを集中して書く系のやつ
 repo = "junegunn/goyo.vim"
+on_ft = [ "markdown" ]
 
 [[plugins]] # markdownを集中して書く系のやつ
 repo = "junegunn/limelight.vim"
 depends = [ "goyo.vim" ]
+on_ft = [ "markdown" ]
 
 [[plugins]]
 repo = "dhruvasagar/vim-table-mode"
