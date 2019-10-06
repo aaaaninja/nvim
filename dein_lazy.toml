@@ -12,6 +12,8 @@ depends = [ "tabular" ]
 on_ft = [ "markdown" ]
 hook_add = """
 let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_override_foldtext = 0
+let g:vim_markdown_conceal = 0
 """
 
 [[plugins]] # markdownを集中して書く系のやつ
