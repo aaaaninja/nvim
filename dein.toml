@@ -36,6 +36,9 @@ depends = [ "vim-fugitive" ]
 repo = "easymotion/vim-easymotion"
 
 [[plugins]]
+repo = "ripxorip/aerojump.nvim"
+
+[[plugins]]
 repo = "Shougo/defx.nvim"
 
 [[plugins]]
